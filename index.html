@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ontario Family Doctor Finder — Hands-Off</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Ontario Family Doctor Finder</h1>
+    <p class="muted">Enter a postal code or use your location to see family doctors nearby on Google Maps. Reviews are shown directly in Maps.</p>
+  </header>
+
+  <section class="container filters">
+    <div class="field">
+      <label>Postal code</label>
+      <input id="postal" type="text" placeholder="e.g., M5V" maxlength="7" />
+    </div>
+    <div class="field">
+      <label>Extra keywords (optional)</label>
+      <input id="q" type="text" placeholder="e.g., clinic, family doctor" />
+    </div>
+    <button id="searchBtn" class="btn">Search</button>
+    <button id="nearbyBtn" class="btn outline">Use my location</button>
+  </section>
+
+  <section class="container">
+    <a id="openMaps" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
+    <div class="embed-wrap">
+      <iframe id="mapFrame" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <small>© 2025 Ontario Family Doctor Finder • No data stored.</small>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
